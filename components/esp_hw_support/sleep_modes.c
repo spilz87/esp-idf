@@ -1172,6 +1172,7 @@ static void gpio_deep_sleep_wakeup_prepare(void)
             ESP_ERROR_CHECK(gpio_pullup_en(gpio_idx));
             ESP_ERROR_CHECK(gpio_pulldown_dis(gpio_idx));
         }*/
+        #warning "PH Version"
         ESP_ERROR_CHECK(gpio_hold_en(gpio_idx));
     }
     // Clear state from previous wakeup
